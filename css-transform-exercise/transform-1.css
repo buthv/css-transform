@@ -1,0 +1,47 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  /* make sure it occupies at least the whole height of the browser */
+  min-height: 100vh;
+  
+  /* center the flex item */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.circle{
+  width: 100px;
+  height: 100px;
+  
+  border: 3px solid black;
+  border-radius: 50%;
+  
+  
+  animation-name: orbit;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  
+  transform-origin: -50% 50%;
+}
+
+@keyframes orbit{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+.square{
+  width: 100px;
+  height: 100px;
+  
+  border: 3px solid black;
+}
