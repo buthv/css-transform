@@ -18,6 +18,7 @@ body{
   border-radius: 50%;
   background-color: #fbac13;
   text-align: center;
+  background-image: url(img/sun.jpg);
   
   box-shadow: 0 0 150px rgb(255,255,0);
 }
